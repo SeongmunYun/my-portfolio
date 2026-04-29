@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>윤성문 | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo">YSM</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__content fade-up">
+        <p class="hero__greeting">안녕하세요,</p>
+        <h1 class="hero__name">윤성문<span class="accent">.</span></h1>
+        <p class="hero__role">SAP Developer &amp; CS Student</p>
+        <p class="hero__desc">
+          건양대학교 기업소프트웨어학부에서 SAP ERP 개발을 공부하고 있습니다.<br />
+          ABAP 기반 시스템 개발과 웹 프론트엔드에 관심을 갖고 있습니다.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">프로젝트 보기</a>
+          <a href="#contact" class="btn btn--outline">연락하기</a>
+        </div>
+      </div>
+      <div class="hero__visual fade-up delay-1">
+        <div class="hero__badge">
+          <span class="badge__label">Currently</span>
+          <span class="badge__value">건양대학교 기업소프트웨어학부</span>
+        </div>
+        <div class="hero__badge">
+          <span class="badge__label">Focus</span>
+          <span class="badge__value">SAP ERP · ABAP · Web</span>
+        </div>
+        <div class="hero__badge">
+          <span class="badge__label">Location</span>
+          <span class="badge__value">대한민국</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">01</span>
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="about__grid reveal">
+        <div class="about__text">
+          <p>
+            SAP ERP 시스템 개발에 특화된 대학생 개발자입니다. ABAP 언어를 기반으로
+            Module Pool, BDC, Function Module 등 다양한 SAP 개발 경험을 보유하고 있으며,
+            순수 JavaScript를 활용한 웹 프론트엔드 개발에도 관심을 갖고 있습니다.
+          </p>
+          <p>
+            대학 학술제와 캡스톤 디자인 프로젝트를 통해 팀 협업 능력을 키웠으며,
+            실제 기업 환경(POSCO)을 기반으로 한 End-to-End SAP 시스템 구현 경험이 있습니다.
+          </p>
+        </div>
+        <div class="about__info">
+          <div class="info-item">
+            <span class="info-item__label">학교</span>
+            <span class="info-item__value">건양대학교</span>
+          </div>
+          <div class="info-item">
+            <span class="info-item__label">학부</span>
+            <span class="info-item__value">기업소프트웨어학부</span>
+          </div>
+          <div class="info-item">
+            <span class="info-item__label">재학</span>
+            <span class="info-item__value">2020.03 ~ 재학중</span>
+          </div>
+          <div class="info-item">
+            <span class="info-item__label">관심 분야</span>
+            <span class="info-item__value">SAP ERP · Web · Cloud</span>
+          </div>
+          <div class="info-item">
+            <span class="info-item__label">이메일</span>
+            <span class="info-item__value">anjrnsidgka2@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">02</span>
+        <h2 class="section__title">Skills</h2>
+      </div>
+      <div class="skills__grid reveal">
+        <div class="skill-group">
+          <h3 class="skill-group__title">SAP / ABAP</h3>
+          <div class="skill-tags">
+            <span class="tag">ABAP</span>
+            <span class="tag">SAP Fiori</span>
+            <span class="tag">Module Pool</span>
+            <span class="tag">BDC</span>
+            <span class="tag">Function Module</span>
+            <span class="tag">RFC / BAPI</span>
+            <span class="tag">FI Module</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Web</h3>
+          <div class="skill-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">기타</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">NaverCloud</span>
+            <span class="tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">03</span>
+        <h2 class="section__title">Projects</h2>
+      </div>
+      <div class="projects__grid">
+
+        <article class="project-card reveal">
+          <div class="project-card__top">
+            <span class="project-card__year">2025</span>
+            <span class="project-card__type">팀 프로젝트</span>
+          </div>
+          <h3 class="project-card__title">SAP Capstone Design III</h3>
+          <p class="project-card__sub">포스코 ERP 시스템 구현</p>
+          <p class="project-card__desc">
+            POSCO를 대상 기업으로 선정하여 MM, FI, SD, PP, QM 모듈을 통합한
+            End-to-End SAP ERP 시스템을 구현. FI(재무회계) 모듈 담당으로
+            A/R, A/P, General Ledger, 입출금, Down Payment 프로세스 구현.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">ABAP</span>
+            <span class="tag tag--sm">SAP ERP</span>
+            <span class="tag tag--sm">FI Module</span>
+            <span class="tag tag--sm">RFC/BAPI</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1">
+          <div class="project-card__top">
+            <span class="project-card__year">2024</span>
+            <span class="project-card__type">개인 프로젝트</span>
+          </div>
+          <h3 class="project-card__title">볼링 관리 시스템</h3>
+          <p class="project-card__sub">ABAP Certification 과제</p>
+          <p class="project-card__desc">
+            볼링장 운영을 위한 강습반·게임·장비 관리 시스템. ERD 설계부터
+            Module Pool 프로그램, BDC 파일 업로드, Function Module 개발까지
+            전 과정을 직접 구현.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">ABAP</span>
+            <span class="tag tag--sm">Module Pool</span>
+            <span class="tag tag--sm">BDC</span>
+            <span class="tag tag--sm">Function Module</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-1">
+          <div class="project-card__top">
+            <span class="project-card__year">2025.11</span>
+            <span class="project-card__type">팀 프로젝트</span>
+          </div>
+          <h3 class="project-card__title">SIMPLE LINE</h3>
+          <p class="project-card__sub">모나미 홈페이지 Vanilla JS 구현</p>
+          <p class="project-card__desc">
+            jQuery 없이 순수 JavaScript만으로 모나미 공식 홈페이지를 재현.
+            햄버거 메뉴, 인터랙티브 호버 효과, 동적 탭 메뉴,
+            드래그 스크롤을 직접 구현.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">JavaScript</span>
+            <span class="tag tag--sm">HTML5</span>
+            <span class="tag tag--sm">CSS3</span>
+            <span class="tag tag--sm">Vanilla JS</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal delay-2">
+          <div class="project-card__top">
+            <span class="project-card__year">2024–2025</span>
+            <span class="project-card__type">학술제</span>
+          </div>
+          <h3 class="project-card__title">ABAP의 정석</h3>
+          <p class="project-card__sub">SCOPE팀 — Standard Class 백서</p>
+          <p class="project-card__desc">
+            건양대 학술제 SCOPE팀에서 제작한 ABAP 개발자용 기술 백서.
+            SAP GUI Standard Class의 기능, 시그니처, 예제 코드, 실행 화면을
+            체계적으로 정리한 객체지향 프로그래밍 가이드.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag tag--sm">ABAP</span>
+            <span class="tag tag--sm">SAP GUI Class</span>
+            <span class="tag tag--sm">OOP</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">04</span>
+        <h2 class="section__title">Contact</h2>
+      </div>
+      <div class="contact__inner reveal">
+        <p class="contact__desc">
+          프로젝트 협업이나 궁금한 점이 있으시면 편하게 연락주세요.
+        </p>
+        <div class="contact__links">
+          <a href="mailto:anjrnsidgka2@gmail.com" class="contact__link">
+            <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m2 7 10 7 10-7"/>
+            </svg>
+            anjrnsidgka2@gmail.com
+          </a>
+          <a href="https://github.com/SeongmunYun" target="_blank" rel="noopener" class="contact__link">
+            <svg class="contact__icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            github.com/SeongmunYun
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 윤성문. All rights reserved.</p>
+      <a href="#home" class="footer__top">↑ top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
