@@ -2,16 +2,16 @@
    Variables & Reset
 =================================================== */
 :root {
-  --bg:          #ffffff;
-  --bg-alt:      #f8fafc;
-  --text:        #0f172a;
-  --text-sub:    #64748b;
-  --accent:      #2563eb;
-  --accent-dark: #1d4ed8;
-  --border:      #e2e8f0;
+  --bg:          #111827;
+  --bg-alt:      #1f2937;
+  --text:        #f9fafb;
+  --text-sub:    #9ca3af;
+  --accent:      #60a5fa;
+  --accent-dark: #3b82f6;
+  --border:      #374151;
   --radius:      12px;
-  --shadow:      0 1px 4px rgba(0,0,0,.06), 0 6px 20px rgba(0,0,0,.06);
-  --shadow-lg:   0 4px 12px rgba(0,0,0,.08), 0 20px 48px rgba(0,0,0,.08);
+  --shadow:      0 1px 4px rgba(0,0,0,.4), 0 6px 20px rgba(0,0,0,.3);
+  --shadow-lg:   0 4px 12px rgba(0,0,0,.5), 0 20px 48px rgba(0,0,0,.4);
   --transition:  .25s ease;
   --max-w:       1100px;
   --nav-h:       64px;
@@ -83,7 +83,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .nav.scrolled {
-  background: rgba(255,255,255,.92);
+  background: rgba(17,24,39,.92);
   backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--border);
 }
@@ -136,12 +136,24 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 =================================================== */
 .hero {
   min-height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: var(--nav-h);
   padding-bottom: 60px;
   position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -160px;
+  left: -160px;
+  width: 560px;
+  height: 560px;
+  background: radial-gradient(circle, rgba(96,165,250,.10) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .hero__inner {
@@ -238,7 +250,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .scroll-line {
   width: 1px;
   height: 40px;
-  background: linear-gradient(to bottom, var(--border), transparent);
+  background: linear-gradient(to bottom, var(--accent), transparent);
   animation: scrollLine 1.8s ease-in-out infinite;
 }
 
@@ -270,7 +282,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 .btn--primary:hover {
   background: var(--accent-dark);
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(37,99,235,.3);
+  box-shadow: 0 4px 16px rgba(96,165,250,.25);
 }
 
 .btn--outline {
@@ -422,7 +434,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
 }
 
 .project-card {
-  background: var(--bg);
+  background: var(--bg-alt);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
